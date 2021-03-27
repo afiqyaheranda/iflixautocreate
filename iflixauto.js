@@ -35,7 +35,7 @@ const filemu = "jumlah.txt";
 
   console.log("\n[+] Iflix Auto Create VIP [+]");
   console.log("[+] @afiqyaheranda_       [+]\n");
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage()
   await page.setDefaultNavigationTimeout(0)
   await page.goto(`https://www.iflix.com/`, {waitUntil: "networkidle2"})
